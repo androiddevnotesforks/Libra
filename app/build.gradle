@@ -6,7 +6,7 @@ android {
 	compileSdk sdk_version
 
 	defaultConfig {
-		minSdk 14
+		minSdk 21
 		targetSdk sdk_version
 
 		versionCode 25
@@ -50,7 +50,7 @@ android {
 }
 
 dependencies {
-	implementation "androidx.appcompat:appcompat:1.6.1"
+	implementation "androidx.appcompat:appcompat:1.7.1"
 	implementation "com.google.android.material:material:1.11.0"
 	implementation "androidx.preference:preference-ktx:1.2.1"
 	implementation "androidx.core:core-ktx:1.12.0"
