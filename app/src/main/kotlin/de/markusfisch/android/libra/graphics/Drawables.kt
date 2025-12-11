@@ -6,7 +6,6 @@ import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
-import android.os.Build
 import androidx.core.graphics.createBitmap
 
 fun Resources.getBitmapFromDrawable(
@@ -16,12 +15,7 @@ fun Resources.getBitmapFromDrawable(
 @SuppressLint("UseCompatLoadingForDrawables")
 fun Resources.getDrawableCompat(
 	resId: Int
-): Drawable = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-	getDrawable(resId, null)
-} else {
-	@Suppress("DEPRECATION")
-	getDrawable(resId)
-}
+): Drawable = getDrawable(resId, null)
 
 private fun getBitmapFromDrawable(drawable: Drawable): Bitmap {
 	if (drawable is BitmapDrawable) {
