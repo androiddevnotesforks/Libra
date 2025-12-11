@@ -12,6 +12,7 @@ import android.view.View
 import android.view.animation.Animation
 import android.view.animation.Transformation
 import androidx.core.content.ContextCompat
+import androidx.core.view.isVisible
 import de.markusfisch.android.libra.R
 import de.markusfisch.android.libra.app.prefs
 import de.markusfisch.android.libra.graphics.getBitmapFromDrawable
@@ -22,7 +23,6 @@ import kotlin.math.min
 import kotlin.math.round
 import kotlin.math.roundToInt
 import kotlin.math.sin
-import androidx.core.view.isVisible
 
 class ScaleView(context: Context) : View(context) {
 	var radians = 0.0
